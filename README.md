@@ -13,9 +13,9 @@ Then, next step download project --->
 
 3) git branch -a
 
-4) git checkout master
+4) git checkout develop
 
-5) git pull origin master
+5) git pull origin develop
 
 
 
