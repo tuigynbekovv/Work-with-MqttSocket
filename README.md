@@ -1,4 +1,4 @@
-# Work-with-MqqtSocket
+# Work-with-MqttSocket
 Structure and architecture building a project using -  MQTTClient with proto files.
 
 Firstly(if you have protobuf files) --->
