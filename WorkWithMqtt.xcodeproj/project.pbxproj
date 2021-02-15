@@ -3,27 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		770077C4A1FC5BA910D7251A /* Pods_WorkWithMqtt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BAC2DB7D5C8E638B2E291EE /* Pods_WorkWithMqtt.framework */; };
 		88AFD83825DA6F100076E1DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AFD83725DA6F100076E1DA /* AppDelegate.swift */; };
-		88AFD83A25DA6F100076E1DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AFD83925DA6F100076E1DA /* SceneDelegate.swift */; };
-		88AFD83C25DA6F100076E1DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AFD83B25DA6F100076E1DA /* ViewController.swift */; };
-		88AFD83F25DA6F100076E1DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88AFD83D25DA6F100076E1DA /* Main.storyboard */; };
 		88AFD84125DA6F110076E1DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88AFD84025DA6F110076E1DA /* Assets.xcassets */; };
 		88AFD84425DA6F110076E1DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88AFD84225DA6F110076E1DA /* LaunchScreen.storyboard */; };
+		88C932FE25DA706300D77EC7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C932FD25DA706300D77EC7 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BAC2DB7D5C8E638B2E291EE /* Pods_WorkWithMqtt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorkWithMqtt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88AFD83425DA6F100076E1DA /* WorkWithMqtt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkWithMqtt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88AFD83725DA6F100076E1DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		88AFD83925DA6F100076E1DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		88AFD83B25DA6F100076E1DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		88AFD83E25DA6F100076E1DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88AFD84025DA6F110076E1DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88AFD84325DA6F110076E1DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88AFD84525DA6F110076E1DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88C932FD25DA706300D77EC7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		959B8EB78123C55973451AC6 /* Pods-WorkWithMqtt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkWithMqtt.debug.xcconfig"; path = "Target Support Files/Pods-WorkWithMqtt/Pods-WorkWithMqtt.debug.xcconfig"; sourceTree = "<group>"; };
+		E0C34D9C5443608227D7529F /* Pods-WorkWithMqtt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkWithMqtt.release.xcconfig"; path = "Target Support Files/Pods-WorkWithMqtt/Pods-WorkWithMqtt.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +31,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				770077C4A1FC5BA910D7251A /* Pods_WorkWithMqtt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11F2FF8758D4C8EC4696300F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				959B8EB78123C55973451AC6 /* Pods-WorkWithMqtt.debug.xcconfig */,
+				E0C34D9C5443608227D7529F /* Pods-WorkWithMqtt.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		88AFD82B25DA6F100076E1DA = {
 			isa = PBXGroup;
 			children = (
 				88AFD83625DA6F100076E1DA /* WorkWithMqtt */,
 				88AFD83525DA6F100076E1DA /* Products */,
+				11F2FF8758D4C8EC4696300F /* Pods */,
+				E891509B4ACA3F4690ACAE6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +68,53 @@
 		88AFD83625DA6F100076E1DA /* WorkWithMqtt */ = {
 			isa = PBXGroup;
 			children = (
+				88C932F925DA702D00D77EC7 /* Supporting Files */,
+				88C932FA25DA704700D77EC7 /* Modules */,
+				88C9330125DA70A300D77EC7 /* Resources */,
+			);
+			path = WorkWithMqtt;
+			sourceTree = "<group>";
+		};
+		88C932F925DA702D00D77EC7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				88AFD83725DA6F100076E1DA /* AppDelegate.swift */,
-				88AFD83925DA6F100076E1DA /* SceneDelegate.swift */,
-				88AFD83B25DA6F100076E1DA /* ViewController.swift */,
-				88AFD83D25DA6F100076E1DA /* Main.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		88C932FA25DA704700D77EC7 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				88C932FB25DA704C00D77EC7 /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		88C932FB25DA704C00D77EC7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				88C932FD25DA706300D77EC7 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		88C9330125DA70A300D77EC7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				88AFD84025DA6F110076E1DA /* Assets.xcassets */,
 				88AFD84225DA6F110076E1DA /* LaunchScreen.storyboard */,
 				88AFD84525DA6F110076E1DA /* Info.plist */,
 			);
-			path = WorkWithMqtt;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E891509B4ACA3F4690ACAE6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BAC2DB7D5C8E638B2E291EE /* Pods_WorkWithMqtt.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +124,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88AFD84825DA6F110076E1DA /* Build configuration list for PBXNativeTarget "WorkWithMqtt" */;
 			buildPhases = (
+				C67CCF571EF1EE50D99A59A0 /* [CP] Check Pods Manifest.lock */,
 				88AFD83025DA6F100076E1DA /* Sources */,
 				88AFD83125DA6F100076E1DA /* Frameworks */,
 				88AFD83225DA6F100076E1DA /* Resources */,
+				CB78C4D9F2E0B2612C78ACA7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,34 +178,66 @@
 			files = (
 				88AFD84425DA6F110076E1DA /* LaunchScreen.storyboard in Resources */,
 				88AFD84125DA6F110076E1DA /* Assets.xcassets in Resources */,
-				88AFD83F25DA6F100076E1DA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C67CCF571EF1EE50D99A59A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WorkWithMqtt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB78C4D9F2E0B2612C78ACA7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WorkWithMqtt/Pods-WorkWithMqtt-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WorkWithMqtt/Pods-WorkWithMqtt-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WorkWithMqtt/Pods-WorkWithMqtt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		88AFD83025DA6F100076E1DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88AFD83C25DA6F100076E1DA /* ViewController.swift in Sources */,
 				88AFD83825DA6F100076E1DA /* AppDelegate.swift in Sources */,
-				88AFD83A25DA6F100076E1DA /* SceneDelegate.swift in Sources */,
+				88C932FE25DA706300D77EC7 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		88AFD83D25DA6F100076E1DA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				88AFD83E25DA6F100076E1DA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		88AFD84225DA6F110076E1DA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,11 +367,13 @@
 		};
 		88AFD84925DA6F110076E1DA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 959B8EB78123C55973451AC6 /* Pods-WorkWithMqtt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = WorkWithMqtt/Info.plist;
+				INFOPLIST_FILE = WorkWithMqtt/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,17 +381,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tuigynbekovMqtt.com.WorkWithMqtt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		88AFD84A25DA6F110076E1DA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0C34D9C5443608227D7529F /* Pods-WorkWithMqtt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = WorkWithMqtt/Info.plist;
+				INFOPLIST_FILE = WorkWithMqtt/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,7 +401,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tuigynbekovMqtt.com.WorkWithMqtt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

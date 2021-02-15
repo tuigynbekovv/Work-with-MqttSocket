@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-WorkWithMqtt/Pods-WorkWithMqtt-frameworks.sh
+${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework
+${BUILT_PRODUCTS_DIR}/MQTTClient/MQTTClient.framework
+${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
+${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework

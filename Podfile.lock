@@ -1,0 +1,32 @@
+PODS:
+  - CocoaLumberjack (3.7.0):
+    - CocoaLumberjack/Core (= 3.7.0)
+  - CocoaLumberjack/Core (3.7.0)
+  - MQTTClient/MinL (0.15.3):
+    - CocoaLumberjack
+  - MQTTClient/WebsocketL (0.15.3):
+    - MQTTClient/MinL
+    - SocketRocket
+  - SnapKit (5.0.1)
+  - SocketRocket (0.5.1)
+
+DEPENDENCIES:
+  - MQTTClient/WebsocketL
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - CocoaLumberjack
+    - MQTTClient
+    - SnapKit
+    - SocketRocket
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: e8955b9d337ac307103b0a34fd141c32f27e53c5
+  MQTTClient: 0dfa04e789479c2e461786464969895c1fcb0875
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+
+PODFILE CHECKSUM: adabf2f90d688826d7be9df0dbb2ad8a09ca2bf4
+
+COCOAPODS: 1.9.3
