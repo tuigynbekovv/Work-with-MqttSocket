@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		770077C4A1FC5BA910D7251A /* Pods_WorkWithMqtt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BAC2DB7D5C8E638B2E291EE /* Pods_WorkWithMqtt.framework */; };
+		882971B625DA729600E68289 /* MqttSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882971B525DA729600E68289 /* MqttSocket.swift */; };
 		88AFD83825DA6F100076E1DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AFD83725DA6F100076E1DA /* AppDelegate.swift */; };
 		88AFD84125DA6F110076E1DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88AFD84025DA6F110076E1DA /* Assets.xcassets */; };
 		88AFD84425DA6F110076E1DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88AFD84225DA6F110076E1DA /* LaunchScreen.storyboard */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		1BAC2DB7D5C8E638B2E291EE /* Pods_WorkWithMqtt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorkWithMqtt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		882971B525DA729600E68289 /* MqttSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MqttSocket.swift; sourceTree = "<group>"; };
 		88AFD83425DA6F100076E1DA /* WorkWithMqtt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkWithMqtt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88AFD83725DA6F100076E1DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88AFD84025DA6F110076E1DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,6 +49,30 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		882971B225DA724A00E68289 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				882971B325DA725D00E68289 /* Mqtt */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		882971B325DA725D00E68289 /* Mqtt */ = {
+			isa = PBXGroup;
+			children = (
+				882971B425DA727A00E68289 /* Proto  */,
+				882971B525DA729600E68289 /* MqttSocket.swift */,
+			);
+			path = Mqtt;
+			sourceTree = "<group>";
+		};
+		882971B425DA727A00E68289 /* Proto  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Proto ";
+			sourceTree = "<group>";
+		};
 		88AFD82B25DA6F100076E1DA = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +96,7 @@
 			children = (
 				88C932F925DA702D00D77EC7 /* Supporting Files */,
 				88C932FA25DA704700D77EC7 /* Modules */,
+				882971B225DA724A00E68289 /* Services */,
 				88C9330125DA70A300D77EC7 /* Resources */,
 			);
 			path = WorkWithMqtt;
@@ -231,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88AFD83825DA6F100076E1DA /* AppDelegate.swift in Sources */,
+				882971B625DA729600E68289 /* MqttSocket.swift in Sources */,
 				88C932FE25DA706300D77EC7 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
