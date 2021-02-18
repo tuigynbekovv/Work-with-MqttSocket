@@ -8,14 +8,35 @@
 import UIKit
 
 class MainViewController: UIViewController {
+    // MARK:- Properties
+    private var socket = MqttSocket()
+    
+    
     // MARK:- View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupViews()
-    }
-
-    // MARK:- Autolayout
-    func setupViews() {
-        view.backgroundColor = UIColor.orange.withAlphaComponent(0.3)
+        view.backgroundColor = .orange
+        socketConnect()
+        socketClosures()
     }
 }
+
+
+extension MainViewController {
+    // MARK:- Socket
+    private func socketConnect() {
+        socket.connect()
+    }
+    
+    private func socketClosures() {
+        socket.socketConnectIs = { bool in
+            if bool {
+                print("successfully connected, you can subscribe topics!!!")
+                self.socket.subscribe(topics: ["/cinema","/anyVideos","/news"])
+            }else {
+                print("try reconnected!")
+            }
+        }
+    }
+}
+

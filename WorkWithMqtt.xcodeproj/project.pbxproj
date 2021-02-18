@@ -60,17 +60,9 @@
 		882971B325DA725D00E68289 /* Mqtt */ = {
 			isa = PBXGroup;
 			children = (
-				882971B425DA727A00E68289 /* Proto  */,
 				882971B525DA729600E68289 /* MqttSocket.swift */,
 			);
 			path = Mqtt;
-			sourceTree = "<group>";
-		};
-		882971B425DA727A00E68289 /* Proto  */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Proto ";
 			sourceTree = "<group>";
 		};
 		88AFD82B25DA6F100076E1DA = {
