@@ -9,7 +9,7 @@ Then, next step download project --->
 
 1) git clone https://github.com/tuigynbekovv/Work-with-MqttSocket
 
-2) cd cd Work-with-MqttSocket/
+2) cd Work-with-MqttSocket/
 
 3) git branch -a
 
