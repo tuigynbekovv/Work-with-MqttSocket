@@ -11,12 +11,7 @@ Then, next step download project --->
 
 2) cd Work-with-MqttSocket/
 
-3) git branch -a
-
-4) git checkout develop
-
-5) git pull origin develop
-
+3) pod install
 
 
 enjoy bro ! ! !
